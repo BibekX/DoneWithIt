@@ -1,11 +1,11 @@
 import React from "react";
-import { View, StyleSheet, Image, Text } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
 import colors from "../config/colors";
 import AppText from "../components/AppText.ios";
-import ListItems from "../components/ListItem";
+import { ListItem } from "../components/lists";
 
-function ListingDetailsScreen(props) {
+function ListingDetailsScreen() {
   return (
     <View>
       <Image source={require("../assets/jacket.jpg")} style={styles.image} />
@@ -14,10 +14,11 @@ function ListingDetailsScreen(props) {
         <AppText style={styles.subTitle}>$100</AppText>
       </View>
       <View style={styles.userContainer}>
-        <ListItems
+        <ListItem
           image={require("../assets/bibek.jpeg")}
           title="Bibek Rajbhandari"
           subTitle="5 Listings"
+          showChevrons={true}
         />
       </View>
     </View>

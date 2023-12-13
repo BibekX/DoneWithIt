@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet, Image, Text } from "react-native";
 
-import colors from "../config/colors";
 import AppText from "./AppText.ios";
+import colors from "../config/colors";
 
 function AppCard({ image, title, subTitle }) {
   return (
@@ -19,9 +19,8 @@ function AppCard({ image, title, subTitle }) {
 const styles = StyleSheet.create({
   card: {
     borderRadius: 15,
-    width: "90%",
-    marginBottom: 20,
-    backgroundColor: colors.light,
+    marginVertical: 10,
+    backgroundColor: colors.white,
   },
   image: {
     width: "100%",
